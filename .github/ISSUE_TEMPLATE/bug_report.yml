@@ -1,0 +1,32 @@
+name: Bug report
+description: Something renders wrong, a trace looks incorrect, or a link does not reopen the same moment.
+labels: [bug]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link to the moment
+      description: Pause on the frame that is wrong and use Copy link. The URL reproduces the exact state.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: For a wrong trace, say which event or line looks off and what the algorithm should do there.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: Firefox 140 on macOS 15
+    validations:
+      required: true

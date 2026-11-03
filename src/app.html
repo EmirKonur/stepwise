@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Step through sorting, pathfinding and tree algorithms one event at a time. Every moment is a shareable link."
+		/>
+		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
+		<script>
+			// Runs before first paint: a stored choice wins, otherwise follow the OS.
+			(() => {
+				let stored = null;
+				try {
+					stored = localStorage.getItem('stepwise:theme');
+				} catch {}
+				const dark =
+					stored === 'dark' ||
+					(stored !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+				document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+			})();
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div class="boot" aria-hidden="true"><span></span><span></span><span></span></div>
+		<noscript>
+			<p class="noscript">
+				Stepwise runs entirely in your browser and needs JavaScript to animate algorithms.
+			</p>
+		</noscript>
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

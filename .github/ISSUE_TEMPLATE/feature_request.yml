@@ -1,0 +1,17 @@
+name: Feature request
+description: A new algorithm, input shape, or control.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like
+      description: For a new algorithm, name it and the trace events it would need. Existing event types are listed in docs/architecture.md.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What it would teach or make easier
+    validations:
+      required: true

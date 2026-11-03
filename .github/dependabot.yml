@@ -1,0 +1,36 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      svelte:
+        patterns:
+          [
+            'svelte',
+            'svelte-check',
+            '@sveltejs/*',
+            'prettier-plugin-svelte',
+            'eslint-plugin-svelte'
+          ]
+      tooling:
+        patterns: ['*']
+        exclude-patterns:
+          [
+            'svelte',
+            'svelte-check',
+            '@sveltejs/*',
+            'prettier-plugin-svelte',
+            'eslint-plugin-svelte'
+          ]
+    ignore:
+      # Pinned to match the Chromium build cached in CI and locally; bump deliberately.
+      - dependency-name: '@playwright/test'
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ['*']
