@@ -5,13 +5,13 @@
 
 Stepwise lets you step, scrub and race through sorting, pathfinding and tree algorithms one event at a time, with the executing line highlighted and every moment shareable as a link.
 
-[![CI](https://github.com/emirk35/stepwise/actions/workflows/ci.yml/badge.svg)](https://github.com/emirk35/stepwise/actions/workflows/ci.yml)
+[![CI](https://github.com/EmirKonur/stepwise/actions/workflows/ci.yml/badge.svg)](https://github.com/EmirKonur/stepwise/actions/workflows/ci.yml)
 ![License: MIT](https://img.shields.io/badge/license-MIT-d7261e)
 ![SvelteKit 3](https://img.shields.io/badge/SvelteKit-3-1f45b5)
 ![TypeScript 6](https://img.shields.io/badge/TypeScript-6-0a0a0a)
 ![Node 26 LTS](https://img.shields.io/badge/Node-26_LTS-ffc20e)
 
-**Live demo:** https://emirk35.github.io/stepwise/
+**Live demo:** https://EmirKonur.github.io/stepwise/
 
 ![Race mode: quicksort against merge sort on the same 64 values, 420 operations in](.github/assets/screenshot-race.png)
 
@@ -30,7 +30,7 @@ The address bar always describes what is on screen: algorithm, input, seed and s
 Requires Node 22.17 or newer (CI uses Node 26 LTS) and pnpm 9.
 
 ```sh
-git clone https://github.com/emirk35/stepwise.git
+git clone https://github.com/EmirKonur/stepwise.git
 cd stepwise
 pnpm install
 pnpm dev            # http://localhost:4310

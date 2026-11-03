@@ -5,10 +5,10 @@
 	"description": "Step through sorting, pathfinding and tree algorithms one event at a time.",
 	"author": "Emir Konur",
 	"license": "MIT",
-	"homepage": "https://emirk35.github.io/stepwise/",
+	"homepage": "https://EmirKonur.github.io/stepwise/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/emirk35/stepwise.git"
+		"url": "https://github.com/EmirKonur/stepwise.git"
 	},
 	"type": "module",
 	"packageManager": "pnpm@9.15.0",
